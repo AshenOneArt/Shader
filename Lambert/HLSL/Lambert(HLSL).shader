@@ -9,7 +9,7 @@ Shader "Unity Shaders Book/Chapter 5/Lambert Shader"
 				
 				HLSLINCLUDE
 
-				half4 _Diffuse;	// HLSL引入变量时，需要HLSLINCLUDE与ENDHLSL包含，此阶段在Subshader之后，Pass之前，与SG不同的是，SG引入变量是在Pass之后。
+				half4 _Diffuse;	// HLSL引入变量时，需要HLSLINCLUDE与ENDHLSL包含,必须在HLSLPROGRAM之前。
 
 				ENDHLSL
 
